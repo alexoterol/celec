@@ -1,25 +1,24 @@
 import Typography from '@mui/material/Typography';
 
-//PENDIENTE: Agregue los props apellidos, nombres y paralelo
+// Definir los props: apellidos, nombres y paralelo
 interface Info {
-
+  apellidos: string;
+  nombres: string;
+  paralelo: string;
 }
 
-export default function Student( info: Info ) {
-    return (
-        <>
-            <Typography component="p" variant="h4">
-                
-                {/* PENDIENTE: Renderice los props apellidos y nombres */}
-                
-            </Typography>
-            <Typography component="h2" variant="h6"
-                color="primary" gutterBottom>
+export default function Student({ apellidos, nombres, paralelo }: Info) {
+  return (
+    <>
+      <Typography component="p" variant="h4">
+        {/* Renderizamos apellidos y nombres */}
+        {`${nombres} ${apellidos}`}
+      </Typography>
 
-                {/* PENDIENTE: Renderice el paralelo */}
-                Paralelo # 
-
-            </Typography>
-        </>
-    )
+      <Typography component="h2" variant="h6" color="primary" gutterBottom>
+        {/* Renderizamos el paralelo */}
+        {`Paralelo # ${paralelo}`}
+      </Typography>
+    </>
+  );
 }
