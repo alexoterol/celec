@@ -42,7 +42,7 @@ function App() {
       {/* Student */}
       <Grid xs={12}>
         {/* Enviamos los datos como props */}
-        <Student apellidos="González" nombres="Juan Carlos" paralelo="A1" />
+        <Student apellidos="Otero Limones" nombres="Alex David" paralelo="101" />
       </Grid>
 
       {/* HydrologyTable */}
