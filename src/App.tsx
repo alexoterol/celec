@@ -5,7 +5,7 @@ import HydrologyTable from './components/HydrologyTable';
 import Student from './components/Student';
 import { useState, useEffect } from 'react';
 
-default interface DataHour {
+interface DataHour {
   Fecha: string;
   Mazar: number;
   Molino: number;
