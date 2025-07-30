@@ -3,10 +3,14 @@ import './App.css';
 import Grid from '@mui/material/Grid';
 import HydrologyTable from './components/HydrologyTable';
 import Student from './components/Student';
-
-// Importamos la interfaz
-import DataHour from './interface/DataHour';
 import { useState, useEffect } from 'react';
+
+default interface DataHour {
+  Fecha: string;
+  Mazar: number;
+  Molino: number;
+  Sopladora: number;
+}
 
 function App() {
   // URL para la API
